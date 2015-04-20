@@ -1,0 +1,75 @@
+/* universal selector normalize box-sizing for all browsers */
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #000;
+	background: #fff;
+	margin, padding: 0;
+	}
+
+#wrapper {
+	margin: 20px auto;
+	max-width: 700px; /* responsive */
+	border: 2px solid #ccc;
+	padding: 20px 30px;
+	}
+
+/* heading and text styles */
+
+h1, h2 {
+	font-family: Cambria, Georgia, serif;
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 20px 0 10px 0;
+	}
+
+h2 { 
+	font-size: 1.6em;
+	padding-bottom: 0;
+	}
+
+p {
+	margin-bottom: 20px;
+	}
+
+em {
+	font-family: Georgia, serif;
+	font-size: 1.1em;
+	}
+
+/* images */
+
+img {
+	max-width: 100%;
+	}
+
+/* links */
+
+a:focus {
+	outline: 2px solid #94bdd1;
+	}
+a:link, a:active, a:visited {
+	color: #00c;
+	text-decoration: underline;
+	}
+a:hover {
+	color: #00f;
+	text-decoration: none;
+	}
+
+/* media queries */
+
+@media only screen and (max-width: 740px) {
+	#wrapper { border: none; padding: 10px; }
+	ol, ul { margin-left: 0; }
+}
