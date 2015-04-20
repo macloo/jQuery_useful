@@ -1,0 +1,53 @@
+#wrapper {
+	margin: 20px auto;
+	max-width: 860px; /* responsive */
+	border: 2px solid #ccc;
+	padding: 20px 30px;
+	}
+
+#content {
+	position: relative;
+	background: url("../images/florida_cities_800w.png");
+	width: 800px;
+	height: 679px;
+	overflow: hidden;
+	}
+
+/* specs for ALL circles */
+
+.circle {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	/* circles that work in all browsers */
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	border: 2px solid black;
+	margin, padding: 0;
+	text-align: center;
+	cursor: pointer; /* show the hand on rollover */
+	}
+
+/* position and color for individual circles */
+/* because of position: relative the position is tied to the DIV 
+   with ID content, which contains the circles */
+
+#gainesville {
+	top: 120px;
+	left: 460px;
+	background: #f00;
+	}
+
+#orlando {
+	top: 210px;
+	left: 540px;
+	background: #98afe3;
+	}
+
+#miami {
+	top: 480px;
+	left: 620px;
+	background: #98e398;
+	}

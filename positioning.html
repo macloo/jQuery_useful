@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Position Several DIVs</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/positioning.css">
+</head>
+
+<body>
+<!-- NOTE: .js file is at bottom of page -->
+<div id="wrapper">
+
+<h1>Positioning and Sensing DIVs: Example</h1>
+
+<p>Click any colored circle below to open an alert dialog.</p>
+
+<p id="warning"><strong>JavaScript has not loaded! The circles will not be clickable.</strong></p>
+
+
+<!-- The background image (map) is supplied by CSS 
+	 The circles are designed and positioned in CSS 
+	 The interaction is by jQuery, in positions.js 
+	 -->
+<div id="content">
+	<div class="circle" id="gainesville" data-name="Gainesville"></div>
+	<div class="circle" id="orlando" data-name="Orlando"></div>
+	<div class="circle" id="miami" data-name="Miami"></div>
+</div>
+
+
+<!-- image source: http://fcit.usf.edu/florida/maps/stateout/photos/64700.pdf -->
+
+<p>How does this work? See notes <a href="scripts/positions.js" target="_blank">in the JavaScript file</a>.</p>
+
+<p>Like this? Thank <a href="https://twitter.com/macloo">@macloo</a></p>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="scripts/positions.js"></script>
+</body>
+</html>
