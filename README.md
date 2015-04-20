@@ -20,5 +20,5 @@ the styles of that page.
 
 ##Positioning and sensing DIVs ([view](http://macloo.github.io/jQuery_useful/positioning.html))
 
-*positioning.html, scripts/positions.js* - You want to overlay some circles or other visuals on top of a static graphic (in this case, it's a map), and you want something to open or pop up when an overlaid item is clicked. Most of this is accomplished with css (see *styles/positioning.css*), but the action happens with jQuery.
+*positioning.html, scripts/positions.js* - You want to overlay some circles or other visuals on top of a static graphic (in this case, it's a map), and you want something to open or pop up when an overlaid item is clicked. Most of this is accomplished with CSS (see *styles/positioning.css*), but the action happens with jQuery - making something happen when you click the overlaid item.
 
