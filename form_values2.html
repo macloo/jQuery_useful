@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Form Values</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+<!-- NOTE: .js files are at bottom of page -->
+<div id="wrapper">
+
+<h1>jQuery Form Values:<br>
+    Capturing Names and Values</h1>
+
+<form id="picker">
+	<label>Value 1:</label> 
+	<input type="text" id="first" name="first" class="textfield"><br>
+	<label>Value 2:</label> 
+	<input type="text" id="second" name="second" class="textfield"><br> 
+	<label>Value 3:</label> 
+	<input type="text" id="third" name="third" class="textfield"><br> 
+	<label>Value 4:</label> 
+	<input type="text" id="fourth" name="fourth" class="textfield"><br> 
+
+	<input type="submit" value="Save"> 
+	<input type="reset" value="Reset">
+</form>
+
+<!-- emepty paragraph we will write into -->
+<p id="result"></p> 
+
+<p>How does this work? See notes in the JavaScript at the bottom of this 
+HTML file (view source).</p>
+
+<p>Like this? Thank <a href="https://twitter.com/macloo">@macloo</a></p>
+
+<p><a href="https://github.com/macloo/jQuery_useful">View on GitHub.</a></p>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+
+<script>
+// test to ensure jQuery has loaded 
+$('#wrapper').append('<p>Hello!</p>');
+
+// get name and value of all text input fields 
+
+// run this when submit button is clicked 
+$('#picker').submit(function(e) {
+	// look at each child of the form that has the ID picker
+	$(this).children().each(function() {
+		// below, (this) is the individual form element
+		// do only if the form element is a text field 
+		if($(this).attr('type') == 'text') {
+			// get the name of the element
+			$('#result').append( "name: " + $(this).attr('name') );
+			// get the value of the element
+			$('#result').append( ", value: " + $(this).val() + '<br>');
+		}
+	});
+	e.preventDefault(); // form is not submitted 
+});
+</script>
+
+<!-- Sources: 
+     https://api.jquery.com/submit/
+     http://stackoverflow.com/questions/8088343/using-jquery-each-and-children-to-traverse-and-hide-focus-form-elements 
+     
+     How to structure an HTML form
+     https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form
+     
+     My first HTML form
+     https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form
+     
+     -->
+
+</body>
+</html>

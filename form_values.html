@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Read Form Values</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<style>
+		#save { display: block; margin-top: 10px; }
+		#write { background: #ff0; }
+	</style>
+</head>
+
+<body>
+<!-- NOTE: .js file is at bottom of page -->
+<div id="wrapper">
+
+<h1>Reading Form Values: Example</h1>
+
+<p>We often need to get the values out of a form and use those values 
+elsewhere on the same page. This is demonstrated here by taking text out of 
+two fields and writing that text into the page.</p>
+
+<p id="warning"><strong>JavaScript has not loaded! The form will not work.</strong></p>
+
+
+<form id="myForm">
+
+<p>What is your favorite food?</p>
+<input type="text" id="food"> 
+
+<p>Why is it your favorite?</p>
+<textarea id="why"></textarea>
+
+<input type="submit" id="save" value="Save">
+
+</form>
+
+<p id="write"></p>
+
+<p>How does this work? See notes <a href="scripts/form_values.js" target="_blank">in the JavaScript file</a>.</p>
+
+<p>Like this? Thank <a href="https://twitter.com/macloo">@macloo</a></p>
+
+<p><a href="https://github.com/macloo/jQuery_useful">View on GitHub.</a></p>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="scripts/form_values.js"></script>
+</body>
+</html>
