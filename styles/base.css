@@ -28,7 +28,7 @@ h1, h2 {
 	font-family: Cambria, Georgia, serif;
 	font-size: 2em;
 	font-weight: normal;
-	line-height: 1.8em;
+	line-height: 1.5em;
 	margin: 0;
 	padding: 20px 0 10px 0;
 	}
@@ -53,6 +53,18 @@ img {
 	max-width: 100%;
 	}
 
+/* form elements */
+
+form { 
+	margin-top: 20px;
+	}
+.textfield {
+	margin-bottom: 10px;
+	}
+input[type="submit"] {
+	margin-top: 10px;
+	}
+ 
 /* links */
 
 a:focus {
