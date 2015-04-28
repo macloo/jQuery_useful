@@ -22,8 +22,13 @@ the styles of that page.
 
 *positioning.html, scripts/positions.js* - You want to overlay some circles or other visuals on top of a static graphic (in this case, it's a map), and you want something to open (or pop up) when an overlaid item is clicked. Most of this is accomplished with CSS (see *styles/positioning.css*), but the action happens with jQuery - making something happen when you click the overlaid item. In this case, an alert dialog box pops up. You are not limited to alert boxes! Use jQuery to make *anything* happen when the overlaid item is clicked. 
 
-##Reading and writing form values: Example 1 ([view](http://macloo.github.io/jQuery_useful/form_values.html))
+##Reading and writing form values
+
+###Example 1 ([view](http://macloo.github.io/jQuery_useful/form_values.html))
 *form_values.html, scripts/form_values.js* - You want to invite user input into a small number of form fields, including input fields and textarea fields. This shows how you can grab what the user has typed and write it back into the same Web page.
 
-##Reading and writing form values: Example 2 ([view](http://macloo.github.io/jQuery_useful/form_values2.html))
+###Example 2 ([view](http://macloo.github.io/jQuery_useful/form_values2.html))
 *form_values2.html* - In this case, the JS is on the same page with the HTML (no separate JS file). The difference between this example and the previous one is that here you can read through every element on a larger form and extract only the text input names and values. These are then written back into the same Web page.
+
+###Example 3 ([view](http://macloo.github.io/jQuery_useful/form_values3.html))
+*form_values3.html, scripts/form_values3.js* - You have a larger number of form fields of various types (text fields, checkboxes, radio buttons, textarea). This shows how you can grab all the user's input and write it back into the same Web page.
