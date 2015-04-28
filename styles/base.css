@@ -64,7 +64,18 @@ form {
 input[type="submit"] {
 	margin-top: 10px;
 	}
- 
+.checkboxes, .checkboxes li, .radios, .radios li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	}
+input[type="checkbox"] {
+	margin-right: 10px;
+	}
+input[type="radio"] {
+	margin-right: 10px;
+	}
+
 /* links */
 
 a:focus {

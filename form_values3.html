@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Form Values</title>
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+<!-- NOTE: .js files are at bottom of page -->
+<div id="wrapper">
+
+<h1>jQuery Form Values:<br>
+    Handling Checkboxes and Radio Buttons</h1>
+
+<p>The jQuery attached to this page reads all the form elements and writes 
+them to this page, below the form.</p>
+
+<form id="picker">
+	<label>Text field (1):</label> 
+	<input type="text" id="first" name="first" class="textfield"><br>
+	
+	<label>Text field (2):</label> 
+	<input type="text" id="second" name="second" class="textfield"><br> 
+	
+	<p>Checkboxes (3):</p> 
+	<ul class="checkboxes">
+		<li><input type="checkbox" name="third" value="bike">Bike</li> 
+		<li><input type="checkbox" name="third" value="boat">Boat</li> 
+		<li><input type="checkbox" name="third" value="bus">Bus</li> 
+		<li><input type="checkbox" name="third" value="car">Car</li> 
+		<li><input type="checkbox" name="third" value="train">Train</li> 
+	</ul>
+	
+	<label>Radio buttons (4):</label> 
+	<ul class="radios">
+		<li><input type="radio" name="fourth" value="male">Male</li>
+		<li><input type="radio" name="fourth" value="female">Female</li>
+		<li><input type="radio" name="fourth" value="notgiven">Prefer 
+		not to answer</li>
+	</ul>
+
+	<p><label>Textarea (5):</label></p>
+	<textarea id="fifth" name="fifth"></textarea><br>
+
+	<input type="submit" value="Save"> 
+	<input type="reset" value="Reset">
+</form>
+
+<!-- empty paragraph we will write into -->
+<p id="result"></p> 
+
+<p>How does this work? See notes <a href="scripts/form_values3.js" target="_blank">in the JavaScript file</a>.</p>
+
+<p>Like this? Thank <a href="https://twitter.com/macloo">@macloo</a></p>
+
+<p><a href="https://github.com/macloo/jQuery_useful">View on GitHub.</a></p>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+<script src="scripts/form_values3.js"></script>
+
+</body>
+</html>
